@@ -589,6 +589,9 @@ h3{
     .data input{
         min-width: 100%;
         padding: 8px;
+        border: none;
+        background-color: #f2f2f233;
+        border-bottom: 4px solid #202020;
     }
 
     .s-form label{
@@ -598,6 +601,11 @@ h3{
     .s-form textarea{
         padding: 15px;
         resize: none;
+        background-color: #F2F2F233;
+        border-radius: 0 0 12px 12px;
+        /* border-left: 4px solid #202020;
+        border-right: 4px solid #202020; */
+        border-bottom: 4px solid #202020;
     }
 
     .s-form .buttons{
