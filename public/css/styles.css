@@ -18,6 +18,12 @@
     box-sizing: border-box;
 }
 
+#ico-menu-1{
+    display: none;
+}
+#ico-menu-2 {
+    display: none;
+}
 
 button{
     background-color: #ffffff00;
@@ -58,14 +64,14 @@ h3{
 .container{
     /* position: absolute; */
     /* background-color: cadetblue; */
-    position: relative;
+    /* position: relative;
     background-image: url("/public/assets/images/portain/horizontal.jpg");
     background-size: cover;
+    width: 100%;
     background-repeat: no-repeat;
     opacity: 0.9;
-    min-width: 280px;
-    height: 100vh;
-    margin-top: -100vh;
+    height: 100vh; */
+    /* margin-top: -100vh; */
 }
 
 /*                                           NAV                                            */
@@ -86,9 +92,89 @@ h3{
 /*==========================================================================================*/
 
 @media screen and (max-width: 768px){
-    body{
-        /* background-color: brown; */
+    
+    #nav{
+        position: absolute;
+        width: 100%;
+        height: max-content;
+        padding: 40px;
+        background: rgb(17,17,17);
+        z-index: 70;
     }
+    #nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #nav ul li a{
+        color: #F2F2F2;
+        text-decoration: none;
+    }
+    
+    #nav ul li{
+        list-style: none;
+        transition: ease 350ms;
+    }
+
+    #nav ul li:hover{
+        transform: scale(1.4);
+        transition: ease 350ms;
+    }
+
+
+/*--------------------------------------------------------------------------------------------------------*/
+
+    .main{
+        width: 100%;
+        height: max-content;
+    }
+
+    .container{
+        position: relative;
+        background-image: url("/public/assets/images/portain/vertical.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .me{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-evenly;
+        top: 20%;
+        left: 20%;
+        width: 60%;
+        margin: 0 auto;
+        height: 75vh;
+        padding: 30px;
+        background-color: rgba(255, 255, 255, 0.75);
+        border-radius: 0 32px;
+        text-align: center;
+    }
+
+    .me img {
+        width: 100%;
+        border-radius: 32px 0;
+        margin-bottom: 10px;
+    }
+
+    .me h2{
+        font-size: 2rem;
+        font-family: 'MonteCarlo', cursive;
+    }
+    .me h3{
+        font-size: 1rem;
+        font-family: 'Playfair Display', serif;
+    }
+
+    
+/*--------------------------------------------------------------------------------------------------------*/
+
+    
+
 
 }
 
@@ -120,7 +206,8 @@ h3{
     }
 
     #nav img{
-        margin: 20px;
+        display: flex;
+        margin: -20px;
         width: 52px;
         cursor: pointer;
         height: 52px;
@@ -128,11 +215,11 @@ h3{
     }
 
     #ico-menu-1{
+        display: flex;
         position: absolute;
         top: 0;
         left: 0;
         margin: 20px;
-        /* padding: 20px; */
         width: 52px;
         cursor: pointer;
         height: 52px;
@@ -140,62 +227,62 @@ h3{
     }
 
     #nav ul{
-        margin: 20px 0;
-        display: flex;
+        margin: 60px 0;
+        /* display: flex; */
         flex-direction: column;
         align-items: center;
     }
     #nav ul li{
         margin-bottom: 100px;
-        list-style: none;
+        /* list-style: none; */
         padding: 0 7px;
         padding-bottom: 3px;
         border-bottom: 2px solid #F2F2F2;
     }
-    #nav ul li a{
+    /* #nav ul li a{
         color: #F2F2F2;
         text-decoration: none;
-    }
+    } */
 
 /*--------------------------------------------------------------------------------------------------------*/
-
+    
     .container{
-        /* background:linear-gradient(rgba(255,255,255,.05), rgba(255,255,255,.05)), url("/public/assets/images/portain/vertical.png"); */
-        background-image: url("/public/assets/images/portain/vertical.png");
-        background-size: cover;
-        /* opacity: 0.80;*/
+        /* background-image: url("/public/assets/images/portain/vertical.png"); */
+        /* background-size: cover; */
+        /* height: 100vh; */
+        margin-top: -100vh;
     }
 
     .me{
-        position: absolute;
-        top: 20%;
-        left: 20%;
-        width: 60%;
-        margin: 0 auto;
+        /* position: absolute; */
+        /* top: 20%; */
+        /* left: 20%; */
+        /* width: 60%; */
+        /* margin: 0 auto; */
         height: 60vh;
         padding: 20px;
-        background-color: rgba(255, 255, 255, 0.75);
-        border-radius: 0 32px;
-        text-align: center;
+        /* background-color: rgba(255, 255, 255, 0.75); */
+        /* border-radius: 0 32px; */
+        /* text-align: center; */
     }
     .me img {
-        width: 100%;
-        border-radius: 32px 0;
+        /* width: 100%;
+        border-radius: 32px 0; */
         margin-bottom: 40px;
     }
 
     .me h2{
         font-size: 1.4rem;
-        font-family: 'MonteCarlo', cursive;
+        /* font-family: 'MonteCarlo', cursive; */
     }
     .me h3{
         font-size: 0.8rem;
-        font-family: 'Playfair Display', serif;
+        /* font-family: 'Playfair Display', serif; */
     }
 
 /*--------------------------------------------------------------------------------------------------------*/
 
-    .about-me{
+    /* .about-me{
         width: 100%;
         height: max-content;
         background-color: rgb(197, 197, 197);
@@ -224,23 +311,20 @@ h3{
         margin-top: 20px;
         padding: 40px;
         text-align: justify;
-    }
+    } */
 
 /*--------------------------------------------------------------------------------------------------------*/
 
-    .skills{
-        /* width: 100%;
-        height: 100vh;
-        background-color: saddlebrown; */
-        height: auto;          /*Cambiar a auto en todos los casos*/
+    /* .skills{
+        height: auto;          Cambiar a auto en todos los casos
         width: 100%;
         background-color: #F7F7F7;
         display: flex;
         flex-direction: column;
-    }
+    } */
 
-    .skills h2{
-        padding-top: 60px; /*Posiblemente a cambiar*/
+    /* .skills h2{
+        padding-top: 60px;
     }
 
     .skills-container{
@@ -410,12 +494,13 @@ h3{
     }
     .s-full img{
         width: 32px;
-    }
+    } */
+
 }
 
 /*--------------------------------------------------------------------------------------------------------*/
 
-    .portafolio{
+    /* .portafolio{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -432,22 +517,19 @@ h3{
         width: 100%;
         display: flex;
         flex-direction: row;
-        flex: 1 1 70%;  /**/
+        flex: 1 1 70%; 
         flex-wrap: wrap;
-        justify-content: space-evenly; /**/
+        justify-content: space-evenly;
     }
 
     .porta-project{
         position: relative;
         display: flex;
         flex-direction: column;
-        /* justify-content: center;
-        align-items: center; */
         width: 200px;
         height: 200px;
         padding: 40px;
         margin: 15px 0;
-        /* margin: 50px 0; */
     }
 
     .text-project{
@@ -462,7 +544,6 @@ h3{
         padding: 5px 10px;
         border-radius: 5px;
         font-size: 0.8rem;
-        /* border: 1px solid #000; */
     }
 
     .bg-project{
@@ -473,7 +554,6 @@ h3{
         height: 200px;
         background-repeat: no-repeat;
         background-size: contain;
-        /* background-position-x: center; */
         filter: blur(6px);
         transition: 300ms ease;
         z-index: -1;
@@ -505,13 +585,13 @@ h3{
     .bg-project:hover, .porta-project:hover{
         z-index: 1;
         transition: 300ms ease;
-        transform: scale(1.03);     /*fk*/
+        transform: scale(1.03);     fk
         filter: blur(0);
-    }
+    } */
 
 /*--------------------------------------------------------------------------------------------------------*/
 
-    .end-presentation{
+    /* .end-presentation{
         background-color: #404040;
     }
 
@@ -603,8 +683,6 @@ h3{
         resize: none;
         background-color: #F2F2F233;
         border-radius: 0 0 12px 12px;
-        /* border-left: 4px solid #202020;
-        border-right: 4px solid #202020; */
         border-bottom: 4px solid #202020;
     }
 
@@ -624,7 +702,7 @@ h3{
 
     input{
         border-radius: 5px;
-    }
+    } */
 
 /*--------------------------------------------------------------------------------------------------------*/
 
