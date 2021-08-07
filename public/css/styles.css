@@ -3,6 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');
 /*h4*/
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+/*Footer*/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+
 
 *{
     margin: 0;
@@ -475,11 +478,17 @@
         filter: blur(0);
     }
 
+/*--------------------------------------------------------------------------------------------------------*/
+
     .end-presentation{
         background-color: #404040;
     }
 
-    .footer-2{
+    .end-presentation h2{
+        padding: 70px 0 20px 0;
+    }
+
+    .footer-end{
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -492,6 +501,85 @@
         background-color: #000000;
         color: #F2F2F2F2;
     }
+
+    .f-social h3{
+        margin-top: 40px;
+        text-align: center;
+    }
+    .box-social{
+        display: flex;
+        flex: 1 1 80%;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        text-align: center;
+        padding: 10px 0;
+        margin: 40px 0;
+    }
+
+    .social{
+        margin: 15px 10px;
+    }
+
+    .social img{
+        width: 64px;
+    }
+
+    .social a{
+        text-decoration: none;
+    }
+
+    .social a p{
+        margin-top: 4px;
+        color: #F2F2F2;
+        font-family: 'Merriweather', serif;
+        font-size: 0.8rem;
+    }
+
+    .social-email{
+        width: 65%;
+        padding: 10px;
+        height: 100%;
+        border: 1px solid #000;
+    }
+
+    .s-form{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .data{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:left;
+    }
+
+    .data input{
+        min-width: 100%;
+        padding: 8px;
+    }
+
+    .s-form label{
+        margin: 10px 0;
+    }
+
+    .s-form textarea{
+        padding: 15px;
+        resize: none;
+    }
+
+    .s-form .buttons{
+        margin-top: 10px;
+    }
+
+    .buttons button{
+        padding: 8px 30px;
+    }
+
+/*--------------------------------------------------------------------------------------------------------*/
+
+
+
 
 /*                                           MEDIA QUERIES                                  */
 /*==========================================================================================*/
