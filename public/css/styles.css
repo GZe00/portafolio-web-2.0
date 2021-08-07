@@ -1,0 +1,173 @@
+
+/*h2 especifico*/
+@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');
+/*h4*/
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body{
+    min-width: 280px;
+} */
+/*==========================================================================================*/
+
+/* .main{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+} */
+
+.container{
+    /* position: absolute; */
+    /* background-color: cadetblue; */
+    position: relative;
+    background-image: url("/public/assets/images/portain/horizontal.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.9;
+    min-width: 280px;
+    height: 100vh;
+    margin-top: -100vh;
+}
+
+/*                                           NAV                                            */
+/*==========================================================================================*/
+
+
+
+/*                                           MEDIA QUERIES                                  */
+/*==========================================================================================*/
+
+@media screen and (max-width: 1366px){
+    body{
+        /* background-color: cadetblue; */
+    }
+}
+
+/*                                           MEDIA QUERIES                                  */
+/*==========================================================================================*/
+
+@media screen and (max-width: 768px){
+    body{
+        /* background-color: brown; */
+    }
+
+}
+
+/*                                           MEDIA QUERIES                                  */
+/*==========================================================================================*/
+
+@media screen and (max-width: 480px) {
+    /* body{
+        background-color: blueviolet;
+    } */
+
+    #nav{
+        position: sticky;
+        top: 0;
+        left: 0;
+        width: 75%;
+        height: 100vh;
+        background: rgb(27, 27, 27, 0.95);
+        display: flex;
+        flex-direction: column;
+        transition: all 500ms;
+        z-index: 40;
+    }
+
+    #nav img{
+        margin: 20px;
+        width: 52px;
+        cursor: pointer;
+        height: 52px;
+        z-index: 60;
+    }
+
+    #ico-menu-1{
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 20px;
+        /* padding: 20px; */
+        width: 52px;
+        cursor: pointer;
+        height: 52px;
+        z-index: 60;
+    }
+
+    #nav ul{
+        margin: 20px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #nav ul li{
+        margin-bottom: 100px;
+        list-style: none;
+        padding: 0 7px;
+        padding-bottom: 3px;
+        border-bottom: 2px solid #F2F2F2;
+    }
+    #nav ul li a{
+        color: #F2F2F2;
+        text-decoration: none;
+    }
+
+    .active{
+        transform: translateX(-800px);
+    }
+
+    .container{
+        /* background:linear-gradient(rgba(255,255,255,.05), rgba(255,255,255,.05)), url("/public/assets/images/portain/vertical.png"); */
+        background-image: url("/public/assets/images/portain/vertical.png");
+        background-size: cover;
+        /* opacity: 0.80;*/
+    }
+
+    .presentation{
+        width: 100%;
+        height: 100vh;
+    }
+
+    .me{
+        position: absolute;
+        top: 20%;
+        left: 20%;
+        width: 60%;
+        margin: 0 auto;
+        height: 60vh;
+        padding: 10px;
+        background-color: rgba(255, 255, 255, 0.75);
+        border-radius: 32px 32px 0 0;
+        text-align: center;
+    }
+    .me img {
+        width: 100%;
+        border-radius: 32px;
+        margin-bottom: 40px;
+    }
+
+    .me h2{
+        font-size: 1.2rem;
+        font-family: 'MonteCarlo', cursive;
+    }
+    .me h3{
+        font-size: 0.6rem;
+        font-family: 'Playfair Display', serif;
+    }
+
+
+}
+
+/*                                           MEDIA QUERIES                                  */
+/*==========================================================================================*/
+
+@media screen and (max-width: 290px){
+    /* body{
+        background-color: bisque;
+    } */
+}
