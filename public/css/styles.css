@@ -1,16 +1,47 @@
 
 /*h2 especifico*/
 @import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');
+/*h3*/
+@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@1,300&display=swap');
 /*h4*/
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 /*Footer*/
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+/*Form*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+
 
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+
+button{
+    background-color: #ffffff00;
+    border-radius: 5px;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+h3{
+    font-family: 'Aleo', serif;
+}
+
+
+.reset{
+    border: 3px solid #ecd435;
+    color: #ecd435;
+    /* text-shadow: 3px 4px 5px #ecd435b0; */
+}
+
+.send{
+    border: 3px solid #28eb42;
+    color: #28eb42;
+    /* text-shadow: 3px 4px 5px #28eb42b0; */
 }
 
 /* body{
@@ -536,10 +567,11 @@
     }
 
     .social-email{
-        width: 65%;
-        padding: 10px;
+        width: 70%;
+        padding: 15px;
         height: 100%;
-        border: 1px solid #000;
+        border-radius: 5px;
+        background-color: #f2f2f24b;
     }
 
     .s-form{
@@ -569,11 +601,21 @@
     }
 
     .s-form .buttons{
-        margin-top: 10px;
+        margin-top: 20px;
+    }
+
+    .s-style{
+        color: #F2F2F2;
+        font-family: 'Roboto Slab', serif;
     }
 
     .buttons button{
         padding: 8px 30px;
+        margin: 5px 2px;
+    }
+
+    input{
+        border-radius: 5px;
     }
 
 /*--------------------------------------------------------------------------------------------------------*/
