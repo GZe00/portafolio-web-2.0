@@ -37,6 +37,10 @@ h3{
     font-family: 'Aleo', serif;
 }
 
+.sub-title{
+    text-align: center;
+    font-family: 'Playfair Display', serif; 
+}
 
 .reset{
     border: 3px solid #ecd435;
@@ -61,7 +65,7 @@ h3{
     height: 100vh;
 } */
 
-.container{
+/* .container{ */
     /* position: absolute; */
     /* background-color: cadetblue; */
     /* position: relative;
@@ -72,7 +76,7 @@ h3{
     opacity: 0.9;
     height: 100vh; */
     /* margin-top: -100vh; */
-}
+/* } */
 
 /*                                           NAV                                            */
 /*==========================================================================================*/
@@ -83,9 +87,7 @@ h3{
 /*==========================================================================================*/
 
 @media screen and (max-width: 1366px){
-    body{
-        /* background-color: cadetblue; */
-    }
+    
 }
 
 /*                                           MEDIA QUERIES                                  */
@@ -173,116 +175,7 @@ h3{
     
 /*--------------------------------------------------------------------------------------------------------*/
 
-    
-
-
-}
-
-/*                                           MEDIA QUERIES                                  */
-/*==========================================================================================*/
-
-@media screen and (max-width: 480px) {
-
-    .sub-title{
-        text-align: center;
-        font-family: 'Playfair Display', serif; 
-    }
-
-    .active{
-        transform: translateX(-800px);
-    }
-
-    #nav{
-        position: sticky;
-        top: 0;
-        left: 0;
-        width: 75%;
-        height: 100vh;
-        background: rgb(27, 27, 27, 0.95);
-        display: flex;
-        flex-direction: column;
-        transition: ease 500ms;
-        z-index: 40;
-    }
-
-    #nav img{
-        display: flex;
-        margin: -20px;
-        width: 52px;
-        cursor: pointer;
-        height: 52px;
-        z-index: 60;
-    }
-
-    #ico-menu-1{
-        display: flex;
-        position: absolute;
-        top: 0;
-        left: 0;
-        margin: 20px;
-        width: 52px;
-        cursor: pointer;
-        height: 52px;
-        z-index: 60;
-    }
-
-    #nav ul{
-        margin: 60px 0;
-        /* display: flex; */
-        flex-direction: column;
-        align-items: center;
-    }
-    #nav ul li{
-        margin-bottom: 100px;
-        /* list-style: none; */
-        padding: 0 7px;
-        padding-bottom: 3px;
-        border-bottom: 2px solid #F2F2F2;
-    }
-    /* #nav ul li a{
-        color: #F2F2F2;
-        text-decoration: none;
-    } */
-
-/*--------------------------------------------------------------------------------------------------------*/
-    
-    .container{
-        /* background-image: url("/public/assets/images/portain/vertical.png"); */
-        /* background-size: cover; */
-        /* height: 100vh; */
-        margin-top: -100vh;
-    }
-
-    .me{
-        /* position: absolute; */
-        /* top: 20%; */
-        /* left: 20%; */
-        /* width: 60%; */
-        /* margin: 0 auto; */
-        height: 60vh;
-        padding: 20px;
-        /* background-color: rgba(255, 255, 255, 0.75); */
-        /* border-radius: 0 32px; */
-        /* text-align: center; */
-    }
-    .me img {
-        /* width: 100%;
-        border-radius: 32px 0; */
-        margin-bottom: 40px;
-    }
-
-    .me h2{
-        font-size: 1.4rem;
-        /* font-family: 'MonteCarlo', cursive; */
-    }
-    .me h3{
-        font-size: 0.8rem;
-        /* font-family: 'Playfair Display', serif; */
-    }
-
-/*--------------------------------------------------------------------------------------------------------*/
-
-    /* .about-me{
+    .about-me{
         width: 100%;
         height: max-content;
         background-color: rgb(197, 197, 197);
@@ -311,20 +204,22 @@ h3{
         margin-top: 20px;
         padding: 40px;
         text-align: justify;
-    } */
+    }
 
+    
 /*--------------------------------------------------------------------------------------------------------*/
 
-    /* .skills{
-        height: auto;          Cambiar a auto en todos los casos
+    .skills{
+        height: auto; 
         width: 100%;
         background-color: #F7F7F7;
         display: flex;
         flex-direction: column;
-    } */
+    }
 
-    /* .skills h2{
-        padding-top: 60px;
+    .skills h2{
+        padding-top: 40px;
+        margin-bottom: 40px;
     }
 
     .skills-container{
@@ -336,10 +231,10 @@ h3{
     }
 
     .skill-box{
-        width: 350px;
+        width: 250px;
         height: 450px;
         background-color: rgba(204, 152, 204, 0);
-        margin: 80px;
+        margin: 40px;
         align-items: stretch;
         display: flex;
         flex-direction: column;
@@ -494,13 +389,12 @@ h3{
     }
     .s-full img{
         width: 32px;
-    } */
+    }
 
-}
-
+    
 /*--------------------------------------------------------------------------------------------------------*/
 
-    /* .portafolio{
+    .portafolio{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -517,7 +411,7 @@ h3{
         width: 100%;
         display: flex;
         flex-direction: row;
-        flex: 1 1 70%; 
+        flex: 1 1 60%; 
         flex-wrap: wrap;
         justify-content: space-evenly;
     }
@@ -526,8 +420,8 @@ h3{
         position: relative;
         display: flex;
         flex-direction: column;
-        width: 200px;
-        height: 200px;
+        width: 350px;
+        height: 300px;
         padding: 40px;
         margin: 15px 0;
     }
@@ -535,7 +429,7 @@ h3{
     .text-project{
         position: absolute;
         margin-top: 10px;
-        top: 80%;
+        top: 85%;
         left: 25%;
         width: 50%;
         text-align: center;
@@ -585,13 +479,13 @@ h3{
     .bg-project:hover, .porta-project:hover{
         z-index: 1;
         transition: 300ms ease;
-        transform: scale(1.03);     fk
+        transform: scale(1.05);     
         filter: blur(0);
-    } */
+    }
 
 /*--------------------------------------------------------------------------------------------------------*/
 
-    /* .end-presentation{
+    .end-presentation{
         background-color: #404040;
     }
 
@@ -702,10 +596,121 @@ h3{
 
     input{
         border-radius: 5px;
-    } */
+    }
+}
+
+/*                                           MEDIA QUERIES                                  */
+/*==========================================================================================*/
+
+@media screen and (max-width: 480px) {
+
+
+    .active{
+        transform: translateX(-800px);
+    }
+
+    #nav{
+        position: sticky;
+        top: 0;
+        left: 0;
+        width: 75%;
+        height: 100vh;
+        background: rgb(27, 27, 27, 0.95);
+        display: flex;
+        flex-direction: column;
+        transition: ease 500ms;
+        z-index: 40;
+    }
+
+    #nav img{
+        display: flex;
+        margin: -20px;
+        width: 52px;
+        cursor: pointer;
+        height: 52px;
+        z-index: 60;
+    }
+
+    #ico-menu-1{
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 20px;
+        width: 52px;
+        cursor: pointer;
+        height: 52px;
+        z-index: 60;
+    }
+
+    #nav ul{
+        margin: 60px 0;
+        flex-direction: column;
+        align-items: center;
+    }
+    #nav ul li{
+        margin-bottom: 100px;
+        padding: 0 7px;
+        padding-bottom: 3px;
+        border-bottom: 2px solid #F2F2F2;
+    }
+
+/*--------------------------------------------------------------------------------------------------------*/
+    
+    .container{
+        margin-top: -100vh;
+    }
+
+    .me{
+        height: 60vh;
+        padding: 20px;
+    }
+    .me img {
+        margin-bottom: 40px;
+    }
+
+    .me h2{
+        font-size: 1.4rem;
+    }
+    .me h3{
+        font-size: 0.8rem;
+    }
 
 /*--------------------------------------------------------------------------------------------------------*/
 
+    .skills h2{
+        padding-top: 60px;
+    }
+
+    .skill-box{
+        width: 350px;
+        margin: 80px;
+    }
+}
+
+/*--------------------------------------------------------------------------------------------------------*/
+
+    .container-porta{
+        flex: 1 1 70%; 
+    }
+
+    .porta-project{
+        width: 200px;
+        height: 200px;
+    }
+
+    .text-project{
+        top: 80%;
+    }
+
+    .bg-project:hover, .porta-project:hover{
+        /* z-index: 1;
+        transition: 300ms ease; */
+        transform: scale(1.03);    
+        /* filter: blur(0); */
+    }
+
+/*--------------------------------------------------------------------------------------------------------*/
 
 
 
