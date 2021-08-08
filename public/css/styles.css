@@ -10,8 +10,6 @@
 /*Form*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
 
-
-
 *{
     margin: 0;
     padding: 0;
@@ -45,41 +43,20 @@ h3{
 .reset{
     border: 3px solid #ecd435;
     color: #ecd435;
-    /* text-shadow: 3px 4px 5px #ecd435b0; */
 }
 
 .send{
     border: 3px solid #28eb42;
     color: #28eb42;
-    /* text-shadow: 3px 4px 5px #28eb42b0; */
 }
-
-/* body{
-    min-width: 280px;
-} */
 /*==========================================================================================*/
-
-/* .main{
-    position: relative;
-    width: 100%;
-    height: 100vh;
-} */
-
-/* .container{ */
-    /* position: absolute; */
-    /* background-color: cadetblue; */
-    /* position: relative;
-    background-image: url("/public/assets/images/portain/horizontal.jpg");
-    background-size: cover;
-    width: 100%;
-    background-repeat: no-repeat;
-    opacity: 0.9;
-    height: 100vh; */
-    /* margin-top: -100vh; */
-/* } */
 
 /*                                           NAV                                            */
 /*==========================================================================================*/
+
+
+
+
 
 
 
@@ -87,14 +64,6 @@ h3{
 /*==========================================================================================*/
 
 @media screen and (max-width: 1366px){
-    
-}
-
-/*                                           MEDIA QUERIES                                  */
-/*==========================================================================================*/
-
-@media screen and (max-width: 768px){
-    
     #nav{
         position: absolute;
         width: 100%;
@@ -112,6 +81,7 @@ h3{
     #nav ul li a{
         color: #F2F2F2;
         text-decoration: none;
+        font-size: 1.45rem;
     }
     
     #nav ul li{
@@ -120,10 +90,9 @@ h3{
     }
 
     #nav ul li:hover{
-        transform: scale(1.4);
+        transform: scale(1.6);
         transition: ease 350ms;
     }
-
 
 /*--------------------------------------------------------------------------------------------------------*/
 
@@ -134,7 +103,7 @@ h3{
 
     .container{
         position: relative;
-        background-image: url("/public/assets/images/portain/vertical.png");
+        background-image: url("/public/assets/images/portain/horizontal.jpg");
         background-size: cover;
         background-repeat: no-repeat;
         width: 100%;
@@ -147,8 +116,8 @@ h3{
         flex-direction: column;
         justify-content:space-evenly;
         top: 20%;
-        left: 20%;
-        width: 60%;
+        left: 12%;
+        width: 75%;
         margin: 0 auto;
         height: 75vh;
         padding: 30px;
@@ -158,33 +127,32 @@ h3{
     }
 
     .me img {
-        width: 100%;
+        width: 50%;
         border-radius: 32px 0;
         margin-bottom: 10px;
+        margin: 0 auto;
     }
 
     .me h2{
-        font-size: 2rem;
+        font-size: 3rem;
         font-family: 'MonteCarlo', cursive;
     }
     .me h3{
-        font-size: 1rem;
+        font-size: 1.35rem;
         font-family: 'Playfair Display', serif;
     }
 
-    
 /*--------------------------------------------------------------------------------------------------------*/
 
     .about-me{
         width: 100%;
         height: max-content;
         background-color: rgb(197, 197, 197);
-        display: flex;
-        flex-direction: column;
         padding: 10vh 0;
     }
     .about-me h2{
-        margin: 0 0 60px 0;
+        margin: 10px auto 60px auto;
+
     }
     .about-me-img{
         width: 60%;
@@ -193,7 +161,7 @@ h3{
     }
 
     .about-me-img img{
-        width: 100%;
+        width: 60%;
         box-shadow: 16px 11px 22px -6px rgba(0,0,0,0.78);
         -webkit-box-shadow: 16px 11px 22px -6px rgba(0,0,0,0.78);
         -moz-box-shadow: 16px 11px 22px -6px rgba(0,0,0,0.78);
@@ -201,13 +169,12 @@ h3{
     }
 
     .about-me-text{
+        display: flex;
+        flex-direction: column;
         margin-top: 20px;
         padding: 40px;
         text-align: justify;
     }
-
-    
-/*--------------------------------------------------------------------------------------------------------*/
 
     .skills{
         height: auto; 
@@ -391,7 +358,6 @@ h3{
         width: 32px;
     }
 
-    
 /*--------------------------------------------------------------------------------------------------------*/
 
     .portafolio{
@@ -411,7 +377,7 @@ h3{
         width: 100%;
         display: flex;
         flex-direction: row;
-        flex: 1 1 60%; 
+        flex: 1 1 80%; 
         flex-wrap: wrap;
         justify-content: space-evenly;
     }
@@ -420,16 +386,17 @@ h3{
         position: relative;
         display: flex;
         flex-direction: column;
-        width: 350px;
-        height: 300px;
-        padding: 40px;
-        margin: 15px 0;
+        width: 800px;
+        height: 400px;
+        padding: 90px;
+        margin: 30px 100px;
+        /* border: 1px solid #000; */
     }
 
     .text-project{
         position: absolute;
         margin-top: 10px;
-        top: 85%;
+        top: 90%;
         left: 25%;
         width: 50%;
         text-align: center;
@@ -437,14 +404,14 @@ h3{
         background-color: #0000008e;
         padding: 5px 10px;
         border-radius: 5px;
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     .bg-project{
         position: absolute;
-        top: 30%;
-        left: 10%;
-        width: 80%;
+        top: 0%;
+        left: -35%;
+        width: 180%;
         height: 200px;
         background-repeat: no-repeat;
         background-size: contain;
@@ -479,123 +446,250 @@ h3{
     .bg-project:hover, .porta-project:hover{
         z-index: 1;
         transition: 300ms ease;
-        transform: scale(1.05);     
+        transform: scale(2);     
         filter: blur(0);
     }
 
 /*--------------------------------------------------------------------------------------------------------*/
 
-    .end-presentation{
-        background-color: #404040;
+.end-presentation{
+    background-color: #404040;
+}
+
+.end-presentation h2{
+    font-size: 2rem;
+    padding: 70px 0 20px 0;
+}
+
+.footer-end{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 25px;
+    text-align: center;
+    margin-top: 40px;
+    padding: 80px 0;
+    width: 100%;
+    height: 10vh;
+    background-color: #000000;
+    color: #F2F2F2F2;
+}
+
+.f-social h3{
+    font-size: 1.5rem;
+    margin-top: 40px;
+    text-align: center;
+}
+.box-social{
+    display: flex;
+    flex: 1 1 80%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 10px 0;
+    margin: 40px 0;
+}
+
+.social{
+    margin: 15px 10px;
+}
+
+.social img{
+    width: 128px;
+    transition: ease 600ms;
+}
+
+.social a{
+    text-decoration: none;
+}
+
+.social a p{
+    margin-top: 4px;
+    color: #F2F2F2;
+    font-family: 'Merriweather', serif;
+    font-size: 1.1rem;
+}
+
+.social-email{
+    width: 55%;
+    padding: 15px;
+    height: 100%;
+    border-radius: 5px;
+    background-color: #f2f2f24b;
+}
+
+.s-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.data{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:left;
+}
+
+.data input{
+    min-width: 100%;
+    padding: 8px;
+    border: none;
+    background-color: #f2f2f233;
+    border-bottom: 4px solid #202020;
+}
+
+.s-form label{
+    margin: 10px 0;
+}
+
+.s-form textarea{
+    padding: 15px;
+    resize: none;
+    background-color: #F2F2F233;
+    border-radius: 0 0 12px 12px;
+    border-bottom: 4px solid #202020;
+}
+
+.s-form .buttons{
+    margin-top: 20px;
+}
+
+.s-style{
+    color: #F2F2F2;
+    font-family: 'Roboto Slab', serif;
+}
+
+.buttons button{
+    padding: 8px 30px;
+    margin: 5px 2px;
+}
+
+input{
+    border-radius: 5px;
+}
+
+
+}
+
+/*                                           MEDIA QUERIES                                  */
+/*==========================================================================================*/
+
+@media screen and (max-width: 768px){
+
+    #nav ul li a{
+        font-size: 1rem;
     }
 
-    .end-presentation h2{
-        padding: 70px 0 20px 0;
+    #nav ul li:hover{
+        transform: scale(1.4);
     }
 
-    .footer-end{
+
+/*--------------------------------------------------------------------------------------------------------*/
+
+    .main{
+        width: 100%;
+        height: max-content;
+    }
+
+    .container{
+        position: relative;
+        background-image: url("/public/assets/images/portain/vertical.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .me{
+        position: absolute;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        line-height: 25px;
+        justify-content:space-evenly;
+        top: 20%;
+        left: 20%;
+        width: 60%;
+        margin: 0 auto;
+        height: 75vh;
+        padding: 30px;
+        background-color: rgba(255, 255, 255, 0.75);
+        border-radius: 0 32px;
         text-align: center;
-        margin-top: 40px;
-        padding: 80px 0;
-        width: 100%;
-        height: 10vh;
-        background-color: #000000;
-        color: #F2F2F2F2;
     }
+
+    .me img {
+        width: 100%;
+        border-radius: 32px 0;
+        margin-bottom: 10px;
+    }
+
+    .me h2{
+        font-size: 2rem;
+        font-family: 'MonteCarlo', cursive;
+    }
+    .me h3{
+        font-size: 1rem;
+        font-family: 'Playfair Display', serif;
+    }
+
+    
+/*--------------------------------------------------------------------------------------------------------*/
+
+    .about-me{
+        display: flex;
+        flex-direction: column;
+    }
+    .about-me h2{
+        margin: 0 0 60px 0;
+    }
+
+    .about-me-img img{
+        width: 100%;
+    }
+
+/*--------------------------------------------------------------------------------------------------------*/
+
+    .container-porta{
+        flex: 1 1 60%; 
+    }
+
+    .porta-project{
+        width: 350px;
+        height: 300px;
+        padding: 40px;
+        margin: 15px 0;
+    }
+
+    .text-project{
+        top: 85%;
+    }
+
+    .bg-project{
+        top: 30%;
+        left: 10%;
+        width: 80%;
+    }
+
+    .bg-project:hover, .porta-project:hover{
+        transform: scale(1.05);     
+    }
+
+/*--------------------------------------------------------------------------------------------------------*/
 
     .f-social h3{
-        margin-top: 40px;
-        text-align: center;
-    }
-    .box-social{
-        display: flex;
-        flex: 1 1 80%;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        text-align: center;
-        padding: 10px 0;
-        margin: 40px 0;
-    }
-
-    .social{
-        margin: 15px 10px;
+        font-size: 1.15rem;
     }
 
     .social img{
         width: 64px;
     }
 
-    .social a{
-        text-decoration: none;
-    }
-
     .social a p{
-        margin-top: 4px;
-        color: #F2F2F2;
-        font-family: 'Merriweather', serif;
         font-size: 0.8rem;
     }
 
     .social-email{
         width: 70%;
-        padding: 15px;
-        height: 100%;
-        border-radius: 5px;
-        background-color: #f2f2f24b;
-    }
-
-    .s-form{
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .data{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content:left;
-    }
-
-    .data input{
-        min-width: 100%;
-        padding: 8px;
-        border: none;
-        background-color: #f2f2f233;
-        border-bottom: 4px solid #202020;
-    }
-
-    .s-form label{
-        margin: 10px 0;
-    }
-
-    .s-form textarea{
-        padding: 15px;
-        resize: none;
-        background-color: #F2F2F233;
-        border-radius: 0 0 12px 12px;
-        border-bottom: 4px solid #202020;
-    }
-
-    .s-form .buttons{
-        margin-top: 20px;
-    }
-
-    .s-style{
-        color: #F2F2F2;
-        font-family: 'Roboto Slab', serif;
-    }
-
-    .buttons button{
-        padding: 8px 30px;
-        margin: 5px 2px;
-    }
-
-    input{
-        border-radius: 5px;
     }
 }
 
@@ -704,10 +798,7 @@ h3{
     }
 
     .bg-project:hover, .porta-project:hover{
-        /* z-index: 1;
-        transition: 300ms ease; */
         transform: scale(1.03);    
-        /* filter: blur(0); */
     }
 
 /*--------------------------------------------------------------------------------------------------------*/
