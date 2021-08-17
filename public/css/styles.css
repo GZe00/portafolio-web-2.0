@@ -442,6 +442,9 @@ h3{
 .soon{
     background-image: url(../assets/images/project/soon.png);
 }
+.fake-ig{
+    background-image: url(/public/assets/images/project/fake-ig.png);
+}
 
 .bg-project:hover, .porta-project:hover{
     z-index: 1;
