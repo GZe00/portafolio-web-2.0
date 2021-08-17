@@ -743,10 +743,6 @@ input{
 /*-----------------------------------------------01-------------------------------------------------------*/
 /*--------------------------------------------------------------------------------------------------------*/
 
-    .active{
-        transform: translateX(-800px);
-    }
-
     #nav{
         position: sticky;
         top: 0;
@@ -791,6 +787,49 @@ input{
         padding: 0 7px;
         padding-bottom: 3px;
         border-bottom: 2px solid #F2F2F2;
+    }
+
+    .toggle{
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+        background: #b6b6b6f5;
+        border-radius: 10px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 200;
+    }
+
+    .toggle.active{
+        background: #7a7a7ab0;
+        color: #000;
+    }
+
+    .toggle ion-icon{
+        position: absolute;
+        color: #F3F3F3;
+        font-size: 34px;
+        display: none;
+    }
+
+    .toggle ion-icon.open,
+    .toggle.active ion-icon.close{
+        display: none;
+    }
+
+    .toggle.active ion-icon.open,
+    .toggle ion-icon.close{
+        display: block;
+    }
+
+    .show{
+        transform: translatex(-900px);
+        transition: ease-in-out 600ms;
+        z-index: 50;
     }
     
 /*-----------------------------------------------02-------------------------------------------------------*/

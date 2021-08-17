@@ -1,14 +1,11 @@
-const iconMenu1 = document.querySelector('#ico-menu-1'),
-    iconMenu2 = document.querySelector('#ico-menu-2'),
-    menu = document.querySelector('#nav');
 
+let menuToggle = document.querySelector('#nav');
+let iconToggle = document.querySelector('.toggle');
 
-iconMenu2.addEventListener('click', () => {
-    menu.classList.toggle('active');
-});
-iconMenu1.addEventListener('click', () => {
-    menu.classList.toggle('active');
-});
+iconToggle.onclick = () => {
+    iconToggle.classList.toggle('active');
+    menuToggle.classList.toggle('show')
+}
 
 gsap.from(".me", {duration: 3, x: 150, opacity: 0, scale: 0.5});
 
@@ -33,8 +30,6 @@ gsap.to(".social", {
         from: "random"
     }
 });
-
-// ScrollReveal().reveal('.about-me', {delay: 200});
 
 ScrollReveal().reveal('.so-1', {delay: 100});
 ScrollReveal().reveal('.so-2', {delay: 400});
