@@ -207,6 +207,7 @@ h3{
     align-items: stretch;
     display: flex;
     flex-direction: column;
+    transition: ease 600ms;
 }
 
 .s-box-text{
