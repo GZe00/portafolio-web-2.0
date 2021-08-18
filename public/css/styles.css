@@ -450,6 +450,9 @@ h3{
 .fake-ig{
     background-image: url(/public/assets/images/project/fake-ig.png);
 }
+.contact-friend{
+    background-image: url(/public/assets/images/project/contact-friend.png);
+}
 
 .bg-project:hover, .porta-project:hover{
     z-index: 1;
