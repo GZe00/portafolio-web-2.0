@@ -453,6 +453,9 @@ h3{
 .contact-friend{
     background-image: url(/public/assets/images/project/contact-friend.png);
 }
+.eder{
+    background-image: url(/public/assets/images/project/eder.png);
+}
 
 .bg-project:hover, .porta-project:hover{
     z-index: 1;
