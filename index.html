@@ -345,15 +345,16 @@
             <h3>E-mail</h3>
             <div class="box-social">
                 <div class="social-email">
-                    <form class="s-form">
+                    <form class="s-form" charset="UTF-8" enctype="text/plain" action="mailto: dev.gze.moises@gmail.com" method="POST">
+                        <h5>(Te pedirá abrir tu app de correos)</h5>
                         <div class="data">
-                            <label class="s-style" for="name">Nombre* </label>
-                            <input type="text">
-                            <label class="s-style" for="email">Tú Email* </label>
-                            <input type="email" name="" id="" required>
+                            <label class="s-style" for="Mi nombre es: ">Nombre* </label>
+                            <input type="text" name="Mi nombre es: " required>
+                            <label class="s-style" for="Mi correo de contacto es: ">Tú Email* </label>
+                            <input type="email" name="Mi correo de contacto es: " id="" required>
                         </div>
-                        <label class="s-style" for="textarea">Comentario:</label>
-                        <textarea type="textarea"></textarea>
+                        <label class="s-style" for="Mi opinión acerca de tu página: ">Comentario:</label>
+                        <textarea type="textarea" name="Mi opinión acerca de tu página: "></textarea>
                         <div class="buttons">
                             <button class="reset" type="reset">Reset</button>
                             <button class="send" type="submit">Enviar</button>
