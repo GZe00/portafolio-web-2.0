@@ -88,6 +88,10 @@ h3{
     transition: ease 350ms;
 }
 
+#nav ion-icon {
+    display: none;
+}
+
 .toggle{
     display: none;
 }
@@ -753,6 +757,12 @@ input{
 /*-----------------------------------------------01-------------------------------------------------------*/
 /*--------------------------------------------------------------------------------------------------------*/
 
+    #nav ion-icon {
+        color: #FFF;
+        display: block;
+        margin-right: 10px;
+    }
+
     #nav{
         position: sticky;
         top: 0;
@@ -793,10 +803,16 @@ input{
         align-items: center;
     }
     #nav ul li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin-bottom: 100px;
         padding: 0 7px;
         padding-bottom: 3px;
-        border-bottom: 2px solid #F2F2F2;
+    }
+
+    #nav ul li a{
+        text-decoration: underline;
     }
 
     .toggle{
