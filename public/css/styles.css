@@ -135,6 +135,9 @@ h3{
     border-radius: 32px 0;
     margin-bottom: 10px;
     margin: 0 auto;
+    box-shadow: 10px 10px 13px -5px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 13px -5px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 13px -5px rgba(0,0,0,0.75);
 }
 
 .me h2{
@@ -547,7 +550,7 @@ h3{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content:left;
+    justify-content:center;
 }
 
 .email{
